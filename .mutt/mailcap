@@ -1,0 +1,8 @@
+# text/html; elinks -dump ; copiousoutput;
+text/html; firefox %s >/dev/null 2>&1; needsterminal;
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+
+image/jpeg;  feh --scale-down %s;
+image/png;   feh --scale-down %s;
+
+application/PDF;  pdftotext %s; copiousoutput;

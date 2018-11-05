@@ -1,0 +1,55 @@
+source "gpg -dq $HOME/.mutt/.my_pass.gpg |"
+
+source $HOME/.mutt/dracula.muttrc
+
+set mailcap_path  = $HOME/.mutt/mailcap
+auto_view text/html
+
+#set sidebar_visible=yes
+
+set imap_user="qlu@altair.com"
+set imap_pass=$my_pass
+set folder="imaps://outlook.office365.com/"
+
+set from="Qiukai Lu <qlu@altair.com>"
+set smtp_url = "smtp://qlu@altair.com@outlook.office365.com:587/"
+set ssl_force_tls = yes
+set smtp_authenticators = "login"
+set smtp_pass=$my_pass
+
+
+set spoolfile = "=INBOX"
+set record = "=Sent Items"
+set postponed = "=Drafts"
+
+mailboxes = +INBOX +Drafts "+Sent Items"                                       
+#set imap_check_subscribed
+
+set header_cache = ~/.cache/mutt
+
+## save copies of sent mail to $record
+set copy=yes
+
+unset imap_passive
+
+# in seconds
+set imap_keepalive = 300
+
+# in seconds 
+set mail_check = 120
+
+#
+set sort = 'reverse-date'
+
+# Index Key Bindings ------------------------------------                      
+bind index gg     first-entry
+bind index G      last-entry
+bind index <tab>  sync-mailbox
+bind index J      previous-unread
+bind index K      next-unread
+bind pager J      previous-unread
+bind pager K      next-unread
+bind pager <up>   previous-line
+bind pager <down> next-line
+# bind index ^      imap-fetch-mail
+#                                         
