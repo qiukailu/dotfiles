@@ -1,0 +1,4 @@
+#URxvt.letterSpace: -1
+URxvt.scrollBar: off
+URxvt.font:  xft:DejavuSansMono:pixelsize=12
+
