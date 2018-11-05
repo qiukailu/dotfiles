@@ -1,4 +1,8 @@
-#URxvt.letterSpace: -1
+URxvt.background: black
+URxvt.foreground: white
 URxvt.scrollBar: off
-URxvt.font:  xft:DejavuSansMono:pixelsize=12
-
+URxvt.font: xft:DejavuSansMono:pixelsize=11
+URxvt.transparent: true
+URxvt.tintColor: white
+URxvt.shading: 20
+! URxvt.font: xft:Source Code Pro:pixelsize=10
