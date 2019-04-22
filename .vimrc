@@ -8,3 +8,12 @@ set expandtab
 
 colo desert
 syntax on
+
+""""""""""""
+" Mappings "
+""""""""""""
+
+nnoremap ev :vsplit $MYVIMRC<cr>
+
+nnoremap sv :source $MYVIMRC<cr>
+
