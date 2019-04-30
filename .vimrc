@@ -17,7 +17,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-
+Plugin 'flazz/vim-colorschemes'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 filetype plugin indent on
@@ -34,7 +35,6 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-colo desert
 syntax on
 
 """"""""""""
@@ -44,4 +44,14 @@ syntax on
 nnoremap ev :vsplit $MYVIMRC<cr>
 
 nnoremap sv :source $MYVIMRC<cr>
+
+" open up a terminal window
+nnoremap <F5> :terminal<cr>
+
+" toggle plugins
+nnoremap <F8> :TagbarToggle<cr>
+nnoremap <F9> :NERDTreeToggle<cr>
+
+" MISC "
+set number relativenumber
 
