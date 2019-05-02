@@ -42,11 +42,17 @@ syntax on
 """"""""""""
 
 nnoremap ev :vsplit $MYVIMRC<cr>
-
 nnoremap sv :source $MYVIMRC<cr>
+
+" save on pressing <shift>
+nnoremap ; :
+nnoremap : ;
 
 " open up a terminal window
 nnoremap <F5> :terminal<cr>
+
+" list current buffers
+nnoremap <F7> :ls<cr>
 
 " toggle plugins
 nnoremap <F8> :TagbarToggle<cr>
