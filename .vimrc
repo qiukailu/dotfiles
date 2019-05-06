@@ -50,6 +50,9 @@ nnoremap : ;
 
 " open up a terminal window
 nnoremap <F5> :terminal<cr>
+"
+" cycle thru tabs
+nnoremap <F6> :tabnext<cr>
 
 " list current buffers
 nnoremap <F7> :ls<cr>
