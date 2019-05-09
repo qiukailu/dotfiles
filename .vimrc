@@ -60,6 +60,8 @@ nnoremap <F7> :ls<cr>
 " toggle plugins
 nnoremap <F8> :TagbarToggle<cr>
 nnoremap <F9> :NERDTreeToggle<cr>
+let g:NERDTreeWinSize=60
+nnoremap <F10> :CtrlP<cr>
 
 " MISC "
 set number relativenumber
