@@ -1,2 +1,3 @@
 --recurse
 --exclude=boost
+--exclude=bin
