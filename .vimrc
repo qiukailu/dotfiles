@@ -48,8 +48,8 @@ nnoremap sv :source $MYVIMRC<cr>
 nnoremap ; :
 nnoremap : ;
 
-" open up a terminal window
-nnoremap <F5> :terminal<cr>
+" open up a terminal window in vertical split
+nnoremap <F5> :vert term<cr>
 "
 " cycle thru tabs
 nnoremap <F6> :tabnext<cr>
